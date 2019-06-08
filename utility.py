@@ -11,7 +11,7 @@ class UtilityExamples(commands.Cog):
     @commands.command()
     async def say(self, ctx, *, message: commands.clean_content):
         """Repeats after you"""
-        await ctx.send(message)
+        await ctx.send("Message")
         await message.delete(1)
 
     @commands.group(invoke_without_command=True)
