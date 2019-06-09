@@ -25,6 +25,7 @@ class Membercount(Cog):
             description = f"{mc} amount of people are in the server!"
         )
         embed.add_field(name="Links",value="Coming soon!")
+        embed.add_footer(text="Thank you for supporting us kidz!")
         await ctx.send(embed=embed)
 
 
