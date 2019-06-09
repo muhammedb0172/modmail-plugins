@@ -25,7 +25,7 @@ class Membercount(Cog):
             description = f"{mc} amount of people are in the server!"
         )
         embed.add_field(name="Links",value="Coming soon!")
-        embed.set_thumbnail(url="https://cdn.discordapp.com/icons/311176602694451202/1136e32d8eac549817574dc7b4b38c19.png?size=128")
+        embed.set_thumbnail(url=ctx.guild.icon_url")
         await ctx.send(embed=embed)
 
 
