@@ -8,7 +8,7 @@ Cog = getattr(commands, 'Cog', object)
 
 
 class Member Count(Cog):
-    """Information plugin"""
+    """Membercount plugin"""
     
     def __init__(self, bot):
         self.bot = bot
