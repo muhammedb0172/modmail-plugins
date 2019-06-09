@@ -25,7 +25,6 @@ class Membercount(Cog):
             description = f"{mc} amount of people are in the server!"
         )
         embed.add_field(name="Links",value="Coming soon!")
-        embed.set_thumbnail(url=ctx.guild.icon_url)
         await ctx.send(embed=embed)
 
 
