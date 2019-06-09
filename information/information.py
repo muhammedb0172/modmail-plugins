@@ -7,7 +7,7 @@ from core.models import PermissionLevel
 Cog = getattr(commands, 'Cog', object)
 
 
-class Information(Cog):
+class Member Count(Cog):
     """Information plugin"""
     
     def __init__(self, bot):
@@ -15,13 +15,14 @@ class Information(Cog):
     
     @commands.command()
     @checks.has_permissions(PermissionLevel.REGULAR)
-    async def information(self, ctx):
-        """Information about this server."""
+    async def membercount(self, ctx):
+        """How many members there are in this server."""
 
+        mc = ctx.guild.member_count
         embed = discord.Embed(
-            title="Information",
-            color=discord.Color.blue(),
-            description="Welcome to The Xtreme Comminuty!"
+            title="Members",
+            color=discord.Color.red(),
+            description = "mc amount of people are in the server!"
         )
         embed.add_field(name="Links",value="Coming soon!")
         embed.set_thumbnail(url=ctx.guild.icon_url)
