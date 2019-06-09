@@ -19,6 +19,7 @@ class Membercount(Cog):
     async def membercount(self, ctx):
         """How many members there are in this server."""
 
+        color_thief = ColorThief(self.bot.icon_url) dominant_color = color_thief.get_color(quality=1)
         mc = ctx.guild.member_count
         embed = discord.Embed(
             title="Members",
