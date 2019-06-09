@@ -22,7 +22,7 @@ class Membercount(Cog):
         mc = ctx.guild.member_count
         embed = discord.Embed(
             title="Members",
-            color=discord.Color.red(),
+            color=dominant_color,
             description = f"{mc} amount of people are in the server!"
         )
         embed.add_field(name="Links",value="Coming soon!")
