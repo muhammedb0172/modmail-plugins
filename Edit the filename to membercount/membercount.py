@@ -30,4 +30,4 @@ class Member Count(Cog):
 
 
 def setup(bot):
-    bot.add_cog(Information(bot))
+    bot.add_cog(Membercount(bot))
