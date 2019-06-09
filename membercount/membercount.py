@@ -7,7 +7,7 @@ from core.models import PermissionLevel
 Cog = getattr(commands, 'Cog', object)
 
 
-class Member Count(Cog):
+class Membercount(Cog):
     """Membercount plugin"""
     
     def __init__(self, bot):
