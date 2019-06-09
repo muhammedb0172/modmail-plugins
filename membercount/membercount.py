@@ -1,4 +1,5 @@
 import discord
+from colorthief import ColorThief
 from discord.ext import commands
 
 from core import checks
