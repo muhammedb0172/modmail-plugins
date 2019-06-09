@@ -22,7 +22,7 @@ class Membercount(Cog):
         embed = discord.Embed(
             title="Members",
             color=discord.Color.red(),
-            description = "mc amount of people are in the server!"
+            description = f"{mc} amount of people are in the server!"
         )
         embed.add_field(name="Links",value="Coming soon!")
         embed.set_thumbnail(url=ctx.guild.icon_url)
