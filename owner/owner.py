@@ -16,19 +16,18 @@ class Owner(Cog):
     @commands.command()
     @checks.has_permissions(PermissionLevel.REGULAR)
     async def owner(self, ctx):
-        """Shows you a little info your server!"""
+        """Shows you a little info of the bot his owner!\nWith links! [BETA]"""
 
-        mc = ctx.guild.member_count
-        rc = len(ctx.guild.roles)
         embed = discord.Embed(
-            title="Serverinfo!",
-            color=discord.Color.red(),
-            description = f"{mc} amount of people are in the server!\n{rc} amount of roles are in the server!"
+            title="Owner of the bot his little info.",
+            color=discord.Color.green(),
+            description="Loon under this sentence!"
             
         )
         embed.add_field(name="Q: Who made this?",value="A: By AshyHi#2158")
-        embed.add_field(name="Are there coming more stuff?",value="Yes! Ofcourse! But you just need to wait!")
-        embed.add_field(name="Links?",value="Please wait. And update the bot daily and use the command to when the link is here!")
+        embed.add_field(name="UTube",value="__[UTube]__(https://www.youtube.com/channel/UCs71Z0iOVIMko0-EbFtuSSg)")
+        embed.add_field(name="TTV",value="__[TTV]__(https://twitch.tv/nofailstudios)")
+        embed.add_field(name="Coming soon.",value="Wait pls!")
         await ctx.send(embed=embed)
 
 
