@@ -24,7 +24,8 @@ class Membercount(Cog):
             color=discord.Color.red(),
             description = f"{mc} amount of people are in the server!"
         )
-        embed.add_field(name="Q: Who made this?",value="A: By AshyHi#2158",inline=true)
+        embed.add_field(name="Q: Who made this?",value="A: By AshyHi#2158")
+        embed.add_field(name="Links?",value="Please wait. And update the bot daily and use the command to when the link is here!")
         await ctx.send(embed=embed)
 
 
