@@ -19,10 +19,12 @@ class Serverinfo(Cog):
         """Shows you a little info your server!"""
 
         mc = ctx.guild.member_count
+        rc = ctx.guild.roles
         embed = discord.Embed(
             title="Serverinfo!",
             color=discord.Color.red(),
-            description = f"{mc} amount of people are in the server!"
+            description = f"{mc} amount of people are in the server!\n{rc} amount of roles are in the server!"
+            
         )
         embed.add_field(name="Q: Who made this?",value="A: By AshyHi#2158")
         embed.add_field(name="Are there coming more stuff?",value="Yes! Ofcourse! But you just need to wait!")
