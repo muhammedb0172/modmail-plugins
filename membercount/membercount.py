@@ -31,4 +31,4 @@ class Serverinfo(Cog):
 
 
 def setup(bot):
-    bot.add_cog(Membercount(bot))
+    bot.add_cog(Serverinfo(bot))
