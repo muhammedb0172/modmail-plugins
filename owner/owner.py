@@ -7,7 +7,7 @@ from core.models import PermissionLevel
 Cog = getattr(commands, 'Cog', object)
 
 
-class Serverinfo(Cog):
+class Owner(Cog):
     """Info of your current server!"""
     
     def __init__(self, bot):
@@ -15,7 +15,7 @@ class Serverinfo(Cog):
     
     @commands.command()
     @checks.has_permissions(PermissionLevel.REGULAR)
-    async def serverinfo(self, ctx):
+    async def owner(self, ctx):
         """Shows you a little info your server!"""
 
         mc = ctx.guild.member_count
@@ -33,4 +33,4 @@ class Serverinfo(Cog):
 
 
 def setup(bot):
-    bot.add_cog(Serverinfo(bot))
+    bot.add_cog(Owner(bot))
