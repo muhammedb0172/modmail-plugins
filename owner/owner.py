@@ -21,7 +21,7 @@ class Owner(Cog):
         embed = discord.Embed(
             title="Owner of the bot his little info.",
             color=discord.Color.green(),
-            description="Loon under this sentence!"
+            description="Look under this sentence!\nAll the link are listed under here!"
             
         )
         embed.add_field(name="Q: Who made this?",value="A: By AshyHi#2158")
