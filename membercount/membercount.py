@@ -8,7 +8,7 @@ Cog = getattr(commands, 'Cog', object)
 
 
 class Membercount(Cog):
-    """Shows you the amount of people that are in the currwnt server!"""
+    """Shows you the amount of people that are in the current server!"""
     
     def __init__(self, bot):
         self.bot = bot
