@@ -24,7 +24,7 @@ class Membercount(Cog):
             color=discord.Color.red(),
             description = f"{mc} amount of people are in the server!"
         )
-        embed.add_field(name="Q: Who made this?",value="A: By AshyHi#2158")
+        embed.add_field(name="Q: Who made this?",value="A: By AshyHi#2158",inline=true)
         await ctx.send(embed=embed)
 
 
