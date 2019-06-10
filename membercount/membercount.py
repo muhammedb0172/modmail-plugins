@@ -8,7 +8,7 @@ Cog = getattr(commands, 'Cog', object)
 
 
 class Membercount(Cog):
-    """Membercount plugin"""
+    """Shows you the amount of people that are in the currwnt server!"""
     
     def __init__(self, bot):
         self.bot = bot
@@ -24,7 +24,7 @@ class Membercount(Cog):
             color=discord.Color.red(),
             description = f"{mc} amount of people are in the server!"
         )
-        embed.add_field(name="Links",value="Coming soon!")
+        embed.add_field(name="Q: Who made this?",value="A: By AshyHi#2158")
         await ctx.send(embed=embed)
 
 
