@@ -8,7 +8,7 @@ Cog = getattr(commands, 'Cog', object)
 
 
 class Owner(Cog):
-    """Info of your current server!"""
+    """Info of your the bot his owner!\nAre you interested in the Owner?\nThen use this command right here, right **NOW**!"""
     
     def __init__(self, bot):
         self.bot = bot
