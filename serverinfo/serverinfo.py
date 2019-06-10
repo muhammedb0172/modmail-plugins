@@ -19,7 +19,7 @@ class Serverinfo(Cog):
         """Shows you a little info your server!"""
 
         mc = ctx.guild.member_count
-        rc = ctx.guild.roles
+        rc = len()ctx.guild.roles
         embed = discord.Embed(
             title="Serverinfo!",
             color=discord.Color.red(),
