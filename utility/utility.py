@@ -22,7 +22,7 @@ class UtilityExamples(commands.Cog):
     @group.command(name='set')
     async def set_(self, ctx, group_name: str.title):
         """Sets their group"""
-        valid_groups = ('Xtreme', 'PoopFACE', 'AwkwardLORD', 'Ramen', 'Linus')
+        valid_groups = ('Xtreme', 'Poopface', 'Awkwardlord', 'Ramen', 'Linus')
         if group_name not in valid_groups:
             await ctx.send('Invalid group. Pick one from: ' + ', '.join(valid_groups))
         else:
