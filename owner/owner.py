@@ -28,6 +28,7 @@ class Owner(Cog):
         embed.add_field(name="UTube",value="[Click Here](https://www.youtube.com/channel/UCs71Z0iOVIMko0-EbFtuSSg)")
         embed.add_field(name="TTV",value="[Click Here](https://twitch.tv/nofailstudios)")
         embed.add_field(name="Coming soon.",value="Wait pls!")
+        embed.set_footer(text="Do before baby shark eats you KID")
         await ctx.send(embed=embed)
 
 
