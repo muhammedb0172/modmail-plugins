@@ -25,8 +25,8 @@ class Owner(Cog):
             
         )
         embed.add_field(name="Q: Who made this?",value="A: By AshyHi#2158")
-        embed.add_field(name="UTube",value="__[UTube]__(https://www.youtube.com/channel/UCs71Z0iOVIMko0-EbFtuSSg)")
-        embed.add_field(name="TTV",value="__[TTV]__(https://twitch.tv/nofailstudios)")
+        embed.add_field(name="UTube",value="[Click Here](https://www.youtube.com/channel/UCs71Z0iOVIMko0-EbFtuSSg)")
+        embed.add_field(name="TTV",value="[Click Here](https://twitch.tv/nofailstudios)")
         embed.add_field(name="Coming soon.",value="Wait pls!")
         await ctx.send(embed=embed)
 
