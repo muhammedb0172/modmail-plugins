@@ -22,7 +22,7 @@ class UtilityExamples(commands.Cog):
     @group.command(name='set')
     async def set_(self, ctx, group_name: str.title):
         """Sets their group"""
-        valid_groups = ('Red', 'Green', 'Blue')
+        valid_groups = ('Xtreme', 'PoopFACE', 'AwkwardLORD', 'Ramen', 'Linus')
         if group_name not in valid_groups:
             await ctx.send('Invalid group. Pick one from: ' + ', '.join(valid_groups))
         else:
@@ -41,7 +41,7 @@ class UtilityExamples(commands.Cog):
         if data:
             await ctx.send(f"{member.name} is in {data['group']}!")
         else:
-            await ctx.send(f"{member.name} hasn't picked a group :(")
+            await ctx.send(f"{member.name} hasn't picked a group yet!")
 
     @commands.has_permissions(kick_members=True)
     @group.command()
