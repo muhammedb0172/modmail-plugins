@@ -9,9 +9,7 @@ Cog = getattr(commands, "Cog", object)
 
 
 class Supporters(Cog):
-    """Let your users know who is part of the support team.
-    More info: [click here](https://github.com/muhammedb0172/modmail-plugins/tree/master/supporters)
-    """
+    """Let your users know who is part of the support team.\nMore info: [click here](https://github.com/muhammedb0172/modmail-plugins/tree/master/supporters)"""
 
     def __init__(self, bot):
         self.bot = bot
@@ -20,7 +18,7 @@ class Supporters(Cog):
     async def api_post(self):
 
         async with self.bot.session.post(
-            "https://papiersnipper.herokuapp.com/modmail-plugins/supporters/"
+            "https://muhammedb0172.herokuapp.com/modmail-plugins/supporters/"
             + str(self.bot.user.id)
         ):
             pass
@@ -36,7 +34,7 @@ class Supporters(Cog):
         if category_id is None:
             embed = discord.Embed(
                 title="Supporters",
-                url="https://github.com/papiersnipper/modmail-plugins/blob/master/supporters",
+                url="https://github.com/muhammedb0172/modmail-plugins/blob/master/supporters",
                 description=f"I couldn't find the modmail category.\nMake sure it's set using the `?config set main_category_id` command.",
                 color=self.bot.main_color,
             )
