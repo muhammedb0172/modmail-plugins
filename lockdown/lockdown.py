@@ -1,13 +1,18 @@
 import discord
 from discord.ext import commands
 
-class Lockdown:
-    """
-    Channel lockdown commands.
-    """
+from core import checks
+from core.models import PermissionLevel
+
+Cog = getattr(commands, 'Cog', object)
+
+
+class Lockdown(Cog):
+    """Channel lockdown commands."""
+    
     def __init__(self, bot):
         self.bot = bot
-        print('Addon "{}" loaded'.format(self.__class__.__name__))
+        
 
     @commands.has_permissions(manage_messages=True)
     @commands.command(pass_context=True, name="lockdown")
