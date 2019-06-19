@@ -22,6 +22,7 @@ class Serverinfo(Cog):
         botc = len([m.id+1 for m in ctx.guild.members if m.bot])
         mc = ctx.guild.member_count
         rc = len(ctx.guild.roles)
+        cc = len(ctx.guild.channels)
         embed = discord.Embed(
             title="Serverinfo!",
             color=self.bot.main_color,
