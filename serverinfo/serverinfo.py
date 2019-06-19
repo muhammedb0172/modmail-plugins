@@ -18,7 +18,7 @@ class Serverinfo(Cog):
     async def serverinfo(self, ctx):
         """Shows you a little info your server!"""
 
-        botc = sum(1 for m in guild.members if m.bot)
+        botc = len([m.id+1 for m in ctx.guild.members if m.bot])
         mc = ctx.guild.member_count
         rc = len(ctx.guild.roles)
         embed = discord.Embed(
