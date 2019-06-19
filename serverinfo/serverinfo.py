@@ -23,7 +23,7 @@ class Serverinfo(Cog):
         rc = len(ctx.guild.roles)
         embed = discord.Embed(
             title="Serverinfo!",
-            color=discord.Color.red(),
+            color=self.bot.main_color,
             description = f"{mc} amount of people are in the server!\n{rc} amount of roles are in the server!\n4 Amount of bot are in the server!"
             
         )
