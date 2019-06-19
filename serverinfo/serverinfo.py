@@ -24,7 +24,7 @@ class Serverinfo(Cog):
         embed = discord.Embed(
             title="Serverinfo!",
             color=discord.Color.red(),
-            description = f"{mc} amount of people are in the server!\n{rc} amount of roles are in the server!"
+            description = f"{mc} amount of people are in the server!\n{rc} amount of roles are in the server!\n4 Amount of bot are in the server!"
             
         )
         embed.add_field(name="Q: Who made this?",value="A: By AshyHi#2158")
