@@ -18,13 +18,14 @@ class Serverinfo(Cog):
     async def serverinfo(self, ctx):
         """Shows you a little info your server!"""
 
+        onmc = len([m.id+1 for m in ctx.guild.members if m.status==discord.Status.online])
         botc = len([m.id+1 for m in ctx.guild.members if m.bot])
         mc = ctx.guild.member_count
         rc = len(ctx.guild.roles)
         embed = discord.Embed(
             title="Serverinfo!",
             color=self.bot.main_color,
-            description = f"{mc} amount of people are in the server!\n{rc} amount of roles are in the server!\n{botc} amount of bots are in the server!"
+            description = f"{mc} amount of people are in the server!\n{onmc} of the {mc} are online in this server!\n{rc} amount of roles are in the server!\n{botc} amount of bots are in the server!"
             
         )
         embed.add_field(name="Q: Who made this?",value="A: By AshyHi#2158")
